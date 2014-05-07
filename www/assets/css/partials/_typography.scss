@@ -3,15 +3,11 @@ html {
 }
 
 body{
-	background-color: $backgroundColor;
+	background: $backgroundColor image-url('background.gif') top left repeat-x;
 	color: $fontColor;
 	font-family: $fontFamily;
-	max-width: 990px;
-	margin: 0 auto;
-
-	@media screen and (min-width: 581px) and (max-width: 1030px){
-		padding: 0 10px;
-	}
+	// max-width: 990px;
+	// margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {

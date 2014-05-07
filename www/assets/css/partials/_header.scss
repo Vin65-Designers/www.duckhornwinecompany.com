@@ -1,3 +1,90 @@
+// Brand Nav
+
+.brand_header{
+	background:image-url('brand_nav_bg.gif') repeat-x;
+	height:42px;
+}
+	
+	.brands{
+		height:42px;
+		z-index:110;
+		
+		li a{
+			background:{
+				image:image-url('brand_nav.jpg');
+				repeat:no-repeat;
+			}
+			display:block;
+			height:42px;
+			overflow:hidden;
+			text-indent:100%;
+			white-space:nowrap;
+		}
+	}
+
+		a.duckhorn{
+			background-position:0 0;
+			width:109px;
+			
+			&:hover{
+				background-position:0 -42px
+			}
+		}
+
+		a.paraduxx{
+			background-position:-109px 0;
+			width:94px;
+			
+			&:hover{
+				background-position:-109px -42px;
+			}
+		}
+
+		a.goldeneye{
+			background-position:-203px 0;
+			width:110px;
+			
+			&:hover{
+				background-position:-203px -42px;
+			}
+		}
+
+		a.migration{
+			background-position:-313px 0;
+			width:114px;
+			
+			&:hover{
+				background-position:-313px -42px;
+			}
+		}
+
+		a.decoy{
+			background-position:-427px 0;
+			width:96px;
+			
+			&:hover{
+				background-position:-427px -42px;
+			}
+		}
+		
+		a.wine_shop{
+			background-position:-523px -42px;
+			width:118px;
+		}
+
+		ul.brand_nav{
+			float:left;
+			margin:0;
+			padding:0;
+			list-style:none;
+
+			li{
+				float:left;
+				margin:0;
+				padding:0;
+			}
+		}
+
 header.primary{
 	margin-bottom: 1em;
 	position: relative;
@@ -23,9 +110,9 @@ header.primary{
 		}
 		background-size: contain;
 		display: block;
-		height: 140px;
+		height: 90px;
 		position: relative;
-		width: 260px;
+		width: 800px;
 
 		&.errorLogo{
 			float: none;
