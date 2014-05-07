@@ -20,6 +20,10 @@ Thumbs.db
 # System
 ###
 _gsdata_
+Application.cfc
+index.cfm
+blank.gif
+empty.empty
 
 ###
 # Sublime
@@ -27,6 +31,6 @@ _gsdata_
 sftp-config.json
 
 ###
-#   SCSS Files
+# SCSS Files
 ###
 .sass-cache/
