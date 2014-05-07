@@ -1,0 +1,110 @@
+button {
+	span{
+		padding: 0 1em;
+	}
+
+	&.defaultBtn,  &.modalBtn,  &.largeBtn{
+		@include mainButtonColor;
+		border: 1px solid $boxShadowHover;
+		border-radius: 3px;
+		box-shadow: inset 0 1px 0 0 lighten($boxShadowColor, 10%);
+		text-decoration: none;
+		text-shadow: 0 -1px 0 lighten($boxShadowHover, 10%);
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			@include mainButtonHover;
+			box-shadow: inset 0 1px 0 0 lighten($boxShadowHover, 10%);
+		}
+	}
+
+	&.modalBtn, &.altModalBtn{
+		height: 2.5em;
+		line-height: inherit;
+	}
+
+	&.altBtn, &.altModalBtn, &.altLargeBtn{
+		@include altButtonColor;
+		border: 1px solid $altBoxShadowColor;
+		border-radius: 3px;
+		box-shadow: inset 0 1px 0 0 $altBoxShadowColor;
+		text-decoration: none;
+		text-shadow: 0 -1px 0 $altButtonText;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			@include altButtonHover;
+			box-shadow: inset 0 1px 0 0 $altBoxShadowColor;
+		}
+	}
+}
+
+a{
+	span{
+		padding: 0 1em;
+		height: auto;
+		line-height: inherit;
+	}
+	
+	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn{
+		@include mainButtonColor;
+		border: 1px solid $boxShadowHover;
+		border-radius: 3px;
+		box-shadow: inset 0 1px 0 0 lighten($boxShadowColor, 10%);
+		text-decoration: none;
+		text-shadow: 0 -1px 0 lighten($boxShadowHover, 10%);
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			@include mainButtonHover;
+			box-shadow: inset 0 1px 0 0 lighten($boxShadowHover, 20%);
+		}
+	}
+
+	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		@include altButtonColor;
+		border: 1px solid $altBoxShadowColor;
+		border-radius: 3px;
+		box-shadow: inset 0 1px 0 0 $altBoxShadowColor;
+		text-decoration: none;
+		text-shadow: 0 -1px 0 $altButtonText;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			@include altButtonHover;
+			box-shadow: inset 0 1px 0 0 $altBoxShadowColor;
+		}
+	}
+
+	&.modalLinkBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		min-width: auto;
+	}
+}
