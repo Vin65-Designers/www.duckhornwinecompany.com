@@ -18,27 +18,109 @@
 	z-index: 1000;
 }
 
-.page{
-	@media screen and (min-width: 768px){
-		float: right;
-		width: 75%;
-	}
+.introContent{
+	border-bottom: 1px solid #bfb5ab;
+	margin: 0 auto 2em;
+	padding: 1em 0 0;
+	width: 90%;
 }
 
-.col2{
-	@media screen and (min-width: 581px){
+.brandMedia{
+	background: $white;
+	border: 1px solid #948671;
+	color: #907f5e;
+	font-family: $garamond;
+	margin-bottom: 1em;
+
+	@media only screen and (min-width: 450px){
 		float: left;
-		margin-right: 4%;
+		margin: 0 1% 1em;
+	}
+
+	@media only screen and (min-width: 450px) and (max-width: 640px){
 		width: 48%;
 	}
 
-	& + .col2{
-		margin-right: 0;
+	@media only screen and (max-width: 640px) {
+		text-align: center;
+	}
+
+	@media only screen and (min-width: 641px) and (max-width: 850px) { 
+		width: 31%;
+	}
+
+	@media only screen and (min-width: 851px) { 
+		width: 23%;
+	}
+
+	ul{
+		padding: 0;
+		list-style: none;
+		text-align: left;
+	}
+
+	li{
+		color: #ccc;
+		list-style: disc;
+		margin-left: 1.25em;
 	}
 }
 
-.v65-featureRight, .v65-right, 
-.v65-featureLeft, .v65-left, 
-.v65-border{
-	@include boxSizing;
+.brandAssets{
+	.v65-podTitle{
+		background-color: #ddd4c5;
+		padding: 0.5em;
+		font:{
+			family: $garamond;
+			size: 1.14em;
+		}
+	}
+
+	.v65-podDescription{
+		padding: 0.5em;
+	}
+}
+
+.productMedia{
+	@media only screen and (max-width: 640px) { 
+		padding: 1em;
+	}
+
+	@media only screen and (min-width: 641px) { 
+		padding: 0.5em;
+	}
+
+	li{
+		@media only screen and (max-width: 449px), (min-width: 520px) and (max-width: 640px), (min-width: 770px) and (max-width: 850px), (min-width: 1012px){
+			float: left;
+			width: 41.5%;
+		}
+
+		@media screen and (min-width: 1012px) and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	.featureImage{
+		margin: 0.75em 0;
+		text-align: center;
+	}
+
+	.productTitle{
+		border-bottom: 1px solid #bfb5ab;
+		color: #776441;
+		font:{
+			size: 14px;
+			weight: bold;
+		}
+		text:{
+			transform: uppercase;
+			align: center;
+		}
+		line-height: 14px;
+		min-height: 42px;
+		margin-bottom: 0.5em;
+		padding-bottom: 0.5em;
+	}
 }
