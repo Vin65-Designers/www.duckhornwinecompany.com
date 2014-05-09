@@ -1,0 +1,60 @@
+.introFeatures{
+	margin-bottom: 1em;
+
+	.v65-pod{
+		background: #f3ece4;
+		font-family: $garamond;
+		padding: 0.5em;
+		text-align: center;
+		
+		@media only screen and (max-width: 640px){
+			margin: 0 0 1em;
+		}
+
+		@media only screen and (min-width: 641px){
+			float: left;
+			margin: 0 1%;
+			min-height: 260px;
+			width: 32%;
+		}
+
+		@media only screen and (min-width: 1025px){
+			
+		}
+
+		&:first-child{
+			@media only screen and (min-width: 641px){
+				margin-left: 0;
+			}
+		}
+
+		&:last-child{
+			@media only screen and (min-width: 641px){
+				margin-right: 0;
+			}
+		}
+	}
+
+	.v65-podTitle{
+		font-weight: bold;
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	.v65-podImage{
+		border: 1px solid #bfb5ab;
+		border-bottom: 0;
+		line-height: 0;
+	}
+
+	.v65-podDescription{
+		padding: 0.5em;
+		border: 1px solid #bfb5ab;
+		border-top: 0;
+		min-height: 87px;
+
+		p{
+			margin-bottom: 0;
+		}
+	}
+}
