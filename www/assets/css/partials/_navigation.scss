@@ -1,3 +1,110 @@
+.mediaBrandNav{
+	background: $brown;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	overflow: hidden;
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li{
+		display: inline-block;
+		font:{
+			family: $garamond;
+			size: 14px;
+		}
+		line-height: 1.2em;
+		margin: 0 1.5%;
+
+		&:first-child{
+			font-variant: small-caps;
+			height: 70px;
+			line-height: 70px;
+		}
+
+		a{
+			background:{
+				color: #e7e1d6;
+				position: center center;
+				repeat: no-repeat;
+				size: 82%;
+			}
+			border: 1px solid #f7f2ea;
+			color: #736343;
+			display: inline-block;
+			height: 70px;
+			letter-spacing: 1px;
+			line-height: 70px;
+			text-transform: uppercase;
+			vertical-align: middle;
+			width: 110px;
+
+			&:hover{
+				background-color: #d6cebe;
+				text-decoration: none;
+			}
+
+			&.duckhorn{
+				background-image: image-url('brandLogos/duckhorn.png');
+
+				@media screen and (min-width: 1012px) and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+					background-image: image-url('brandLogos/duckhorn@2x.png');					
+				}
+			}
+
+			&.decoy{
+				background-image: image-url('brandLogos/decoy.png');
+
+				@media screen and (min-width: 1012px) and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+					background-image: image-url('brandLogos/decoy@2x.png');					
+				}
+			}
+
+			&.paraduxx{
+				background-image: image-url('brandLogos/paraduxx.png');
+
+				@media screen and (min-width: 1012px) and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+					background-image: image-url('brandLogos/paraduxx@2x.png');					
+				}
+			}
+
+			&.goldeneye{
+				background-image: image-url('brandLogos/goldeneye.png');
+
+				@media screen and (min-width: 1012px) and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+					background-image: image-url('brandLogos/goldeneye@2x.png');					
+				}
+			}
+
+			&.migration{
+				background-image: image-url('brandLogos/migration.png');
+
+				@media screen and (min-width: 1012px) and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+					background-image: image-url('brandLogos/migration@2x.png');					
+				}
+			}
+
+		}
+	}
+}
+
+.stickyNav{
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+
+	ul{
+		max-width: 1016px;
+		margin: 0 auto;
+	}
+}
+
 /* ----- a. Main Menu ----- */
 .mainMenu{
 	font-size: 13px;
