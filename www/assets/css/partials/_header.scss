@@ -3,6 +3,7 @@
 .brand_header{
 	background:image-url('brand_nav_bg.gif') repeat-x;
 	height:42px;
+	overflow: hidden;
 }
 	
 	.brands{
@@ -20,8 +21,7 @@
 			text-indent:100%;
 			white-space:nowrap;
 		}
-	}
-
+		
 		a.duckhorn{
 			background-position:0 0;
 			width:109px;
@@ -71,6 +71,8 @@
 			background-position:-523px -42px;
 			width:118px;
 		}
+	}
+
 
 		ul.brand_nav{
 			float:left;
@@ -112,7 +114,7 @@ header.primary{
 		display: block;
 		height: 90px;
 		position: relative;
-		width: 800px;
+		max-width: 800px;
 
 		&.errorLogo{
 			float: none;
