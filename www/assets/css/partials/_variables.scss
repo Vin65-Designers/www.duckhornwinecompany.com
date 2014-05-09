@@ -17,7 +17,7 @@ $brown-dark: #33302a;
 
 // Font Colors
 $fontColor: $offBlack; // Main Body Content font color
-$linkColor: $blue; // Main Body content link color
+$linkColor: #857657; // Main Body content link color
 
 // Backgroung Color
 $backgroundColor: $brown-dark; // Main Background Color
@@ -94,13 +94,13 @@ $logo: 'logo.png';
 $logo-retina: 'logo@2x.png';
 
 // Global Fonts
-$georgia: Georgia, serif;
+$garamond: 'Garamond',Georgia, "Times New Roman", Times, serif;
 $lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;	
 
 // Global Variables
 $maxWidth: 990px;
 $fontFamily: $lucida;
-$headingFontFamily: $georgia;
+$headingFontFamily: $garamond;
 
 
 @mixin gradient($color1, $color2){
@@ -128,3 +128,40 @@ $headingFontFamily: $georgia;
 		height:100%;
 	}
 }
+
+.v65-group{
+	zoom:1;
+
+	&:after, &:before{
+		content:"";
+		display:table;
+	}
+
+	&:after{
+		clear: both;
+	}
+}
+
+// 73643f
+// // Small screens
+// @media only screen { } /* Define mobile styles */
+
+// @media only screen and (max-width: 640px) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// // Medium screens
+// @media only screen and (min-width: 641px) { } /* min-width 641px, medium screens */
+
+// @media only screen and (min-width: 641px) and (max-width: 1024px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// // Large screens
+// @media only screen and (min-width: 1025px) { } min-width 1025px, large screens
+
+// @media only screen and (min-width: 1025px) and (max-width: 1440px) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// // XLarge screens
+// @media only screen and (min-width: 1441px) { } /* min-width 1441px, xlarge screens */
+
+// @media only screen and (min-width: 1441px) and (max-width: 1920px) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// // XXLarge screens
+// @media only screen and (min-width: 1921px) { } /* min-width 1921px, xlarge screens */
