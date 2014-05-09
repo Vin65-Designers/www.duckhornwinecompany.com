@@ -2,9 +2,18 @@
 	background: $headingFontColor;
 }
 
+.wrap{
+	max-width: 1016px;
+	margin: 0 auto;
+
+	@media screen and (min-width: 581px) and (max-width: 1030px){
+		padding: 0 10px;
+	}
+}
+
 .content{
-	background: $homepageContentColor;
-	box-shadow: 0 0 20px $contentBoxShadow;
+	background: $contentBackgroundColor;
+	padding: 0.5em 0.5em 2em;
 }
 
 	.pageContent{
@@ -17,8 +26,40 @@
 		}
 	}
 
+.clear2Up, .clear3Up, .clear4Up{
+	display: none;
+}
+
+.clear2Up{
+	@media only screen and (min-width: 450px) and (max-width: 640px){
+		display: block;
+	}
+}
+
+.clear3Up{
+	@media only screen and (min-width: 641px) and (max-width: 850px) { 
+		display: block;
+	}
+}
+
+.clear4Up{
+	@media only screen and (min-width: 450px) and (max-width: 640px){
+		display: block;
+	}
+
+	@media only screen and (min-width: 851px) { 
+		display: block;
+	}
+}
+
+.hideOnMobile{
+	@media only screen and (max-width: 640px) { 
+		display: none;
+	}
+}
+
 /* ----- a. Homepage Styles ----- */
-@import 'content_home';
+@import 'content_introFeatures';
 
 /* ----- b. Page Styles ----- */
 @import 'content_page';
