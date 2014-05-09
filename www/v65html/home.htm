@@ -24,54 +24,119 @@
 </head>
 <body>
 
-	<header class="primary v65-group">
-		<div id="user-tools">
-			<v65:modalCart></v65:modalCart>	
-			<v65:login></v65:login>
-		</div><!--/user-tools-->
-		
+	<div class="full brand_header">
+		<div class="brands wrap">
+			<ul class="brand_nav">
+				<li><a href="http://www.duckhorn.com" class="duckhorn">Duckhorn</a></li>
+				<li><a href="http://www.paraduxx.com" class="paraduxx">Paraduxx</a></li>
+				<li><a href="http://www.goldeneyewinery.com" class="goldeneye">Goldeneye Winery</a></li>
+				<li><a href="http://www.migrationwines.com" class="migration">Migration</a></li>
+				<li><a href="http://www.decoywines.com" class="decoy">Decoy</a></li>
+				<li><a href="http://www.duckhornwineshop.com" class="wine_shop">Shop All Wineries</a></li>
+			</ul>
+		</div>
+	</div><!--/full header-->
+
+	<header class="primary wrap v65-group">
 		<h1 class="logo hideText">
 			<a href="/" accesskey="h"><v65:websiteName></v65:websiteName></a>
 		</h1>
-		
-		<nav class="mainMenu">
-			<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
-			<a href="#footerMenu" class="footerMenuLink"><i class="icon-menu"></i></a>
-		</nav>
 	</header>
 
-	<section class="content homepageContent v65-group">
+	<section class="wrap v65-group">
 		<a class="backToTop" href="#"><i class="icon-up-bold"></i>TOP</a>
 		
-		<div id="slider"></div>
-				
-		<article class="homepageText">
-			<v65:mainContent></v65:mainContent>
+		<article class="introFeatures v65-group">
+			<v65:pods location="Global Features" type="title,image,description"></v65:pods>
 		</article>
-		
-		<div class="homepageProductGroup">
-			<v65:product:group code="HomepageProductGroup"></v65:product:group>
+
+		<div class="mediaBrandNav">
+			<ul>
+				<li>Media by Brand</li>
+				<li><a href="#" class="contactUs">Contact Us</a></li>
+				<li><a href="#duckhorn" class="duckhorn"></a></li>
+				<li><a href="#decoy" class="decoy"></a></li>
+				<li><a href="#paraduxx" class="paraduxx"></a></li>
+				<li><a href="#goldeneye" class="goldeneye"></a></li>
+				<li><a href="#migration" class="migration"></a></li>
+			</ul>
 		</div>
-	</section><!--/homepageContent-->
+
+		<div class="content">
+
+			<article class="introContent v65-group">
+				<v65:mainContent></v65:mainContent>
+			</article>
+
+			<section class="media v65-group" id="duckhorn">
+				<h1>Duckhorn</h1>
+				<div class="brandAssets brandMedia">
+					<v65:pods location="Duckhorn Brand Assets" type="title,description"></v65:pods>
+				</div><!-- / .brandAssets.brandMedia -->
+
+				<v65:contentBlock group="Duckhorn Product Assets"></v65:contentBlock>
+			</section><!-- / #duckhorn -->
+
+			<section class="media v65-group" id="decoy">
+				<h1>Decoy</h1>
+				<div class="brandAssets brandMedia">
+					<v65:pods location="Decoy Brand Assets" type="title,description"></v65:pods>
+				</div><!-- / .brandAssets.brandMedia -->
+
+				<v65:contentBlock group="Decoy Product Assets"></v65:contentBlock>
+			</section><!-- / #decoy -->
+
+			<section class="media v65-group" id="paraduxx">
+				<h1>Paraduxx</h1>
+				<div class="brandAssets brandMedia">
+					<v65:pods location="Paraduxx Brand Assets" type="title,description"></v65:pods>
+				</div><!-- / .brandAssets.brandMedia -->
+
+				<v65:contentBlock group="Paraduxx Product Assets"></v65:contentBlock>
+			</section><!-- / #paraduxx -->
+
+			<section class="media v65-group" id="goldeneye">
+				<h1>Goldeneye</h1>
+				<div class="brandAssets brandMedia">
+					<v65:pods location="Goldeneye Brand Assets" type="title,description"></v65:pods>
+				</div><!-- / .brandAssets.brandMedia -->
+
+				<v65:contentBlock group="Goldeneye Product Assets"></v65:contentBlock>
+			</section><!-- / #goldeneye -->
+
+			<section class="media v65-group" id="migration">
+				<h1>Migration</h1>
+				<div class="brandAssets brandMedia">
+					<v65:pods location="Migration Brand Assets" type="title,description"></v65:pods>
+				</div><!-- / .brandAssets.brandMedia -->
+
+				<v65:contentBlock group="Migration Product Assets"></v65:contentBlock>
+			</section><!-- / #migration -->
+		</div><!-- / .content -->
+	</section><!-- / .wrap -->
 	
-	<footer>
+	<footer class="wrap">
 		<a name="footerMenu"></a>
 
-		<nav>
-			<v65:layoutFooterNav></v65:layoutFooterNav>
-		</nav>
+			<div class="footerLegal">
+				<v65:layoutFooterNav></v65:layoutFooterNav>
+				<p>(800) 354-8885&nbsp;|&nbsp;<v65:copyright></v65:copyright> All rights reserved.</p>
+			</div>
 
-		<div class="footerTools"> 
-			<v65:contentBlock group="Footer Contact Details"></v65:contentBlock>
-			
-			<ul class="legal">
-				<li><v65:copyright></v65:copyright></li>
-				<li><v65:vin65Accolade></v65:vin65Accolade></li>
-			</ul>
-		</div><!--/footerTools-->
+			<div class="social_links">
+				<ul>
+					<li><a href="http://www.duckhornwinecompany.com/" class="mediaBtn"><span>MEDIA & TRADE</span></a></li>
+					<li>
+						JOIN US 
+						<a href="http://www.facebook.com/DuckhornVineyards"><img src="/assets/images/facebook.png" alt="Facebook"></a>
+						<a href="http://twitter.com/#!/duckhornwine"><img src="/assets/images/twitter.png" alt="Twitter"></a>
+					</li>
+					<li><span class="st_sharethis_custom" displayText="ShareThis" id="share-link">Share This</span></li>
+				</ul>
+			</div>
 	</footer>
 
-	<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js"></v65:js>
+	<v65:js files="/assets/js/scripts.js"></v65:js>
 
 	<!--//Vin65 QuickLaunchFooter//-->
 	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>
