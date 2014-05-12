@@ -147,3 +147,19 @@ header.primary{
 			margin-bottom: 0;
 		}
 	}
+
+	.tagline{
+		color: #f3ede4;
+		letter-spacing: 1px;
+		@include garamond-italic;
+		font-size: 21px;
+		margin: 1em;
+		text-align: center;
+
+		@media only screen and (min-width: 768px){
+			bottom: 0;
+			left: 180px;
+			margin: 0;
+			position: absolute;
+		}
+	}
