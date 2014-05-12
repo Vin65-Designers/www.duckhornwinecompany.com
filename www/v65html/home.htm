@@ -21,12 +21,15 @@
 		<script src="/assets/js/respond.min.js"></script>
 	<![endif]-->
 
+	<script type="text/javascript" src="//use.typekit.net/ijx0uua.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
 <body>
 
 	<div class="full brand_header">
 		<div class="brands wrap">
-			<ul class="brand_nav">
+			<ul class="brand_nav hideText">
 				<li><a href="http://www.duckhorn.com" class="duckhorn">Duckhorn</a></li>
 				<li><a href="http://www.paraduxx.com" class="paraduxx">Paraduxx</a></li>
 				<li><a href="http://www.goldeneyewinery.com" class="goldeneye">Goldeneye Winery</a></li>
@@ -44,7 +47,7 @@
 	</header>
 
 	<section class="wrap v65-group">
-		<a class="backToTop" href="#"><i class="icon-up-bold"></i>TOP</a>
+		<a class="backToTop" href="#">TOP</a>
 		
 		<article class="introFeatures v65-group">
 			<v65:pods location="Global Features" type="title,image,description"></v65:pods>
@@ -53,7 +56,7 @@
 		<div class="mediaBrandNav">
 			<ul>
 				<li>Media by Brand</li>
-				<li><a href="#" class="contactUs">Contact Us</a></li>
+				<li><a href="/Contact-Us" class="contactUs">Contact Us</a></li>
 				<li><a href="#duckhorn" class="duckhorn"></a></li>
 				<li><a href="#decoy" class="decoy"></a></li>
 				<li><a href="#paraduxx" class="paraduxx"></a></li>
@@ -63,7 +66,6 @@
 		</div>
 
 		<div class="content">
-
 			<article class="introContent v65-group">
 				<v65:mainContent></v65:mainContent>
 			</article>
@@ -112,28 +114,36 @@
 
 				<v65:contentBlock group="Migration Product Assets"></v65:contentBlock>
 			</section><!-- / #migration -->
+
+			<section class="media v65-group" id="dwc">
+				<h1>Duckhorn Wine Company</h1>
+
+				<div class="footerAssets">
+					<v65:pods location="Duckhorn Wine Company Assets" type="title,description"></v65:pods>
+				</div><!-- / .brandAssets.brandMedia -->
+			</section><!-- / #migration -->
+
 		</div><!-- / .content -->
 	</section><!-- / .wrap -->
 	
-	<footer class="wrap">
+	<footer class="wrap v65-group">
 		<a name="footerMenu"></a>
 
-			<div class="footerLegal">
-				<v65:layoutFooterNav></v65:layoutFooterNav>
-				<p>(800) 354-8885&nbsp;|&nbsp;<v65:copyright></v65:copyright> All rights reserved.</p>
-			</div>
+		<div class="footerLegal">
+			<v65:layoutFooterNav></v65:layoutFooterNav>
+			<p>(800) 354-8885&nbsp;|&nbsp;<v65:copyright></v65:copyright>. All rights reserved.</p>
+		</div><!-- / .footerLegal -->
 
-			<div class="social_links">
-				<ul>
-					<li><a href="http://www.duckhornwinecompany.com/" class="mediaBtn"><span>MEDIA & TRADE</span></a></li>
-					<li>
-						JOIN US 
-						<a href="http://www.facebook.com/DuckhornVineyards"><img src="/assets/images/facebook.png" alt="Facebook"></a>
-						<a href="http://twitter.com/#!/duckhornwine"><img src="/assets/images/twitter.png" alt="Twitter"></a>
-					</li>
-					<li><span class="st_sharethis_custom" displayText="ShareThis" id="share-link">Share This</span></li>
-				</ul>
-			</div>
+		<div class="socialLinks">
+			<ul>
+				<li><a href="http://www.duckhornwinecompany.com/" class="mediaBtn"><span>MEDIA &amp; TRADE</span></a></li>
+				<li>
+					<span>JOIN US</span>
+					<a href="http://www.facebook.com/DuckhornVineyards"><i class="icon-facebook"></i></a>
+					<a href="http://twitter.com/#!/duckhornwine"><i class="icon-twitter"></i></a>
+				</li>
+			</ul>
+		</div><!-- / .socialLinks-->
 	</footer>
 
 	<v65:js files="/assets/js/scripts.js"></v65:js>
