@@ -2,8 +2,13 @@
 
 .brand_header{
 	background:image-url('brand_nav_bg.gif') repeat-x;
+	display: none;
 	height:42px;
 	overflow: hidden;
+
+	@media only screen and (min-width: 700px){
+		display: block;
+	}
 }
 	
 	.brands{
@@ -68,8 +73,12 @@
 		}
 		
 		a.wine_shop{
-			background-position:-523px -42px;
+			background-position:-523px 0;
 			width:118px;
+
+			&:hover{
+				background-position:-523px -42px;
+			}
 		}
 	}
 
@@ -88,7 +97,10 @@
 		}
 
 header.primary{
-	margin-bottom: 1em;
+	margin:{
+		bottom: 1em;
+		top: 1em;
+	}
 	position: relative;
 	width: 100%;
 	z-index: 10;
@@ -112,9 +124,10 @@ header.primary{
 		}
 		background-size: contain;
 		display: block;
-		height: 90px;
+		height: 86px;
+		margin: 0;
 		position: relative;
-		max-width: 800px;
+		width: 148px;
 
 		&.errorLogo{
 			float: none;
@@ -126,7 +139,7 @@ header.primary{
 		
 		@media screen and (max-width: 767px){
 			clear: both;
-			margin: 0.5em auto 0;
+			margin: 0 auto;
 		}
 
 		@media screen and (min-width: 768px){
