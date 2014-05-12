@@ -1,56 +1,71 @@
 footer{
 	color: $footerFontColor;
+	font-family: $footerFontFamily;
+	font-size: 0.7em;
+	line-height: 1em;
+	margin-top: 22px;
 	padding: 1.5em 0;
-	text-align: center;
+	text-transform: uppercase;
 	width: 100%;
+
+	@media screen and (max-width: 640px){
+		text-align: center;
+	}
+
+	p{
+		@media screen and (max-width: 640px){
+			margin:{
+				left: 0.5em;
+				right: 0.5em;
+			}
+		}
+	}
 
 	ul{
 		list-style: none;
-		margin: 0 1em;
+		margin: 0;
 		padding: 0;
 
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 641px){
 			margin-bottom: 0.5em;
 		}
 	}
 
 	li{
-		@media screen and (max-width: 767px){
+		@media screen and (max-width: 640px){
 			border-top: 1px solid $borderColor;
 			line-height: 44px;
 			text-align: center;
 		}
 
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 641px){
+			border-left: 1px solid $footerFontColor;
 			display: inline;
+			line-height: 1em;
 			padding:0 5px;
+
+			&:first-child{
+				border: 0;
+				padding-left: 0;
+			}
 		}
 
 		a{
 			color: $footerFontColor;
 			display: inline-block;
-			font-size: 0.917em;
 			position: relative;
 
-			@media screen and (max-width: 767px){
+			@media screen and (max-width: 640px){
 				width: 100%;
 			}
 
 			&:hover{
-				color: $footerFontColorHover;
+				text-decoration: underline;
 			}
 		}
 	}
 
-	.phone, .email, .map{
-		a:hover{
-			text-decoration: none;
-		}
-	}
-
 	.legal{
-		font-size: 0.917em;
-
 		li{
 			display: block;
 		}
@@ -58,5 +73,51 @@ footer{
 
 	a{
 		color:$footerFontColor;
+	}
+}
+
+.footerLegal{
+	@media only screen and (min-width: 641px){
+		float: left;
+		width: 60%;
+	}
+}
+
+.socialLinks{
+	@media only screen and (min-width: 641px){
+		float: right;
+		line-height: 15px;
+		text-align: right;
+		width: 30%
+	}
+
+	i{
+		color: #aba188;
+
+		@media only screen and (max-width: 640px){
+			font-size: 24px;
+		}
+
+		@media only screen and (min-width: 641px){
+			font-size: 15px;
+		}
+	}
+
+	li{
+		border: 0;
+	}
+
+	a{
+		@media only screen and (max-width: 640px){
+			display: inline-block;
+			margin: 0 0.5em;
+			width: auto;
+		}
+	}
+
+	span{
+		@media only screen and (max-width: 640px){
+			display: block;
+		}
 	}
 }
