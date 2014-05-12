@@ -3,7 +3,7 @@
 
 	.v65-pod{
 		background: #f3ece4;
-		font-family: $garamond;
+		@include garamond-regular;
 		padding: 0.5em;
 		text-align: center;
 		
@@ -45,6 +45,10 @@
 		border: 1px solid #bfb5ab;
 		border-bottom: 0;
 		line-height: 0;
+
+		img{
+			width: 100%;
+		}
 	}
 
 	.v65-podDescription{
