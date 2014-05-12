@@ -9,23 +9,20 @@ html {
 body{
 	background: $backgroundColor image-url('background.gif') top left repeat-x;
 	color: $fontColor;
-	font-family: $fontFamily;
+	@include garamond-regular;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color: $headingFontColor;
-	font:{
-		family: $headingFontFamily;
-		variant: small-caps;
-		weight: bold;
-	}
+	@include garamond-semibold;
+	font-variant: small-caps;
 	margin: 0;
 }
 
 h1 {
 	font-size: 2.3em;
 	line-height: 1;
-	margin-bottom: 0.5em;
+	margin: 0 1% 0.5em;
 }
 
 h2 {

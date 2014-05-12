@@ -15,9 +15,12 @@ $brown-light: #edece8;
 $brown: #ddd4c5;
 $brown-dark: #33302a;
 
+$gold: #a69b85;
+$gold-light: #857657;
+
 // Font Colors
 $fontColor: $offBlack; // Main Body Content font color
-$linkColor: #857657; // Main Body content link color
+$linkColor: $gold-light; // Main Body content link color
 
 // Backgroung Color
 $backgroundColor: $brown-dark; // Main Background Color
@@ -27,7 +30,7 @@ $contentBackgroundColor: $brown-light; //Content background color
 $contentBoxShadow: $flatgrey;
 
 // Heading Colors
-$headingFontColor: $grey-dark; // Default Heading Font Color
+$headingFontColor: #736343; // Default Heading Font Color
 $headerFontColor: $grey-dark; // Font Color outside the container
 $headerFontColorHover: $black; // Hover font color outside the container
 
@@ -48,11 +51,10 @@ $subNavBackgroundColor: $white; //Background Color for sub navigation
 
 // Footer Colors
 $footerColor: $grey; //Footer Color
-$footerLink: $grey-light; // Footer Link
-$footerLinkHover: $white; // Footer Link Hover
+$footerLink: $gold; // Footer Link
 
-$footerFontColor: $grey-dark; //Font Color outside the container
-$footerFontColorHover: $black; // Hover font color outside the container
+$footerFontColor: $gold; //Font Color outside the container
+$footerFontFamily: "Verdana"; //Footer font family
 
 // Border Colors
 $borderColor: $grey-light; // Main Border Color
@@ -94,12 +96,39 @@ $logo: 'logo.png';
 $logo-retina: 'logo@2x.png';
 
 // Global Fonts
+$arial: arial, helvetica, sans-serif;	
 $garamond: 'Garamond',Georgia, "Times New Roman", Times, serif;
-$lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;	
+
+@mixin garamond-regular{
+	font-family: "adobe-garamond-pro-n4","adobe-garamond-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin garamond-italic{
+	font-family: "adobe-garamond-pro-i4","adobe-garamond-pro",sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
+@mixin garamond-semibold{
+font-family: "adobe-garamond-pro",sans-serif;
+font-style: normal;
+font-weight: 600;
+}
+@mixin garamond-bold{
+	font-family: "adobe-garamond-pro",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin garamond-bold-italic{
+	font-family: "adobe-garamond-pro-i7","adobe-garamond-pro",sans-serif;
+	font-style: italic;
+	font-weight: 700;
+}
+
 
 // Global Variables
 $maxWidth: 990px;
-$fontFamily: $lucida;
+$fontFamily: $arial;
 $headingFontFamily: $garamond;
 
 
